@@ -1,0 +1,70 @@
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 20% 78%;
+    grid-gap: 2%;
+    height: 100%;
+    background-color: aqua;
+}
+.caja{
+    padding: 1rem 0;
+    background-color: aquamarine;
+}
+
+
+.navegacion, .presentacion, .formulario, .pie-pagina{ 
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.menu{ 
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.contenedor-flex{
+    display: flex;
+    padding: 0 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenedor-flex > .subcontenedor-flex{
+    background-color: aliceblue;
+}
+
+.boton {
+    border: none;
+    padding: 0.9rem 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0.1rem;
+    cursor: pointer;
+}
+
+.boton-navegacion{
+    color: black;
+    background-color: white;
+
+}
+
+.contenedor-presentacion{
+    position: relative;
+    text-align: center;
+}
+
+.img-presentacion {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.contenedor-presentacion > .titulo {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
