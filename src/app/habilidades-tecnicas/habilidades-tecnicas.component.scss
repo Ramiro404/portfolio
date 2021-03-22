@@ -1,0 +1,22 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 2rem;
+}
+
+.ul-d {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .ul-d li {
+    padding-left: 24px;
+    background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/rocket.svg);
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: top 6px left 5px;
+  }
+
+b {
+    color: var(--tial-fuerte);
+}

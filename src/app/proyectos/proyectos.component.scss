@@ -1,0 +1,29 @@
+.contenedor-proyecto{
+    display: flex;
+    flex-direction: row;
+}
+/*
+.contenedor-proyecto > div {
+    font-size: 30px;
+}*/
+/*
+.contendor-proyecto > .imagen-proyecto {
+    width: 40%;
+    background-color: cornflowerblue;
+}
+
+.contendor-proyecto > .descripcion-proyecto {
+    width: 60%;
+    background-color: hotpink;
+}
+*/
+
+
+ .imagen-proyecto {
+    width: 40%;
+}
+
+.descripcion-proyecto {
+    padding: 0.25rem;
+    width: 60%;
+}

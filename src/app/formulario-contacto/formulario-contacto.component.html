@@ -1,0 +1,12 @@
+<form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="Correo electronico" formControlName="email">
+
+    <label for="fullName">Nombre completo</label>
+    <input type="text" name="fullName" placeholder="Tu nombre" formControlName="fullName">
+
+    <label for="comment">Comentario</label>
+    <input type="text-area" name="comment" placeholder="Algún comentario" formControlName="comment">
+
+    <button type="submit" [disabled]="!FormData.valid">Enviar</button>
+</form>

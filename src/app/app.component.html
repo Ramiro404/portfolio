@@ -5,7 +5,14 @@
       <div class="subcontenedor-flex">
         <button class="boton boton-navegacion">Inicio</button>
         <button class="boton boton-navegacion">Proyectos</button>
-        <button class="boton boton-navegacion">Idioma</button>
+        <div class="dropdown">
+          <button class="boton boton-navegacion"><i class="fas fa-globe"></i> Idioma</button>
+          <div class="dropdown-content">
+            <a href="#">Español</a>
+            <a href="#">Inglés</a>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
@@ -16,10 +23,68 @@
       <h1 class="titulo">Ramiro De La Cruz Navarro<br>Desarrollador Web</h1>
     </div>
   </div>
-  <div class="caja menu">menu</div>
-  <div class="caja contenido">contenido</div>
-  
-  <div class="caja proyectos">proyectos</div>
-  <div class="caja formulario">formulario</div>
-  <div class="caja pie-pagina">pie-pagina</div>
+  <div class="caja menu">
+    <div class="contenedor-menu">
+      <ul class="lista-menu">
+        <li class="elemento-menu"><a href="#quien-soy" routerLinkActive="activo" >¿Quién soy?</a></li>
+        <li class="elemento-menu"><a href="#habilidades-tecnicas" routerLinkActive="activo">Habilidades tecnicas</a></li>
+        <li class="elemento-menu"><a href="#proyectos" routerLinkActive="activo">Proyectos</a></li>
+        <li class="elemento-menu"><a href="#contacto" routerLinkActive="activo">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="caja contenido">
+    <div class="contenedor-principal">
+      <div id="quien-soy" class="quien-soy">
+        <h1>¿Quién soy?</h1>
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpluspng.com%2Fimg-png%2Fuser-png-icon-young-user-icon-2400.png&f=1&nofb=1"
+          class="img-foto-perfil">
+        <p>Soy desarrollador web con 7 meses de experiencia, actualmente me encuentro en octavo semestre de la carrera
+          de
+          Ing. En sistemas computacionales en la universidad del valle de México Campus Villahermosa.</p><br>
+        <p>Tambien trabajo en Axolotl Systems Company, una empresa en crecimiento, fundada por un compañero de la
+          carrera.
+          Mi trabajo consiste en el desarrollo de front-end con Angular y realizar la conexión con el back-end.</p>
+      </div>
+      <div id="habilidades-tecnicas" class="habilidades">
+        <app-habilidades-tecnicas></app-habilidades-tecnicas>
+      </div>
+    </div>
+  </div>
+
+  <div id="proyectos" class="caja proyectos">
+    <div class="contenedor-proyectos">
+      <app-proyectos></app-proyectos>
+    </div>
+
+  </div>
+  <!-- Más adelante será agragado
+  <div class="caja formulario">
+    <app-formulario-contacto></app-formulario-contacto>
+  </div>
+-->
+  <div id="contacto" class="caja pie-pagina">
+    <div class="contenedor-pie-pagina">
+      <h3>Más información</h3>
+      <div class="contenido-enlaces">
+        <a  class="enlace-linkedin" href="https://www.linkedin.com/in/ramiro-de-la-cruz-navarro/" target="_blank">
+          <i
+          class="fab fa-linkedin"></i>
+        </a>
+        <a class="enlace-github" href="https://github.com/Ramiro404" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!--
+      <a class="boton linkedin" href="https://www.linkedin.com/in/ramiro-de-la-cruz-navarro/" target="_blank"> <i
+          class="fab fa-linkedin"></i>
+        Ramiro De La Cruz Navarro</a>-->
+      <br>
+      <!--Gracias por visitar mi portafolio-->
+      &copy; Copyright 2021
+    </div>
+
+
+  </div>
 </div>

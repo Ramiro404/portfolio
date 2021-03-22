@@ -1,7 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --tial-claro: rgb(53,190,158,0.3);
+    --tial-fuerte: rgb(0,174,133);
+    --blanco: white;
+    --img-tamaño: 8rem;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Arial;
+}
+
+html{
+    scroll-behavior: smooth;
 }
