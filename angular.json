@@ -60,6 +60,14 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "en": {
+              "aot": true,
+              "outputPath": "dist/portfolio/",
+              "i18nFile": "locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -71,6 +79,9 @@
           "configurations": {
             "production": {
               "browserTarget": "portfolio:build:production"
+            },
+            "en":{
+              "browserTarget": "portfolio:build:en"
             }
           }
         },

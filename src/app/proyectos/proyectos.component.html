@@ -1,11 +1,11 @@
 
-<h1>Proyectos</h1>
+<h1>{{ 'PROJECTS.TITLE' | translate }}</h1>
 <div class="contenedor-proyecto" *ngFor="let proyecto of proyectos">
     <div class="imagen-proyecto">
         <img src="{{proyecto.imagenUrl}}" width="100%" height="auto">
     </div>
     <div class="descripcion-proyecto">
         <h3>{{ proyecto.nombre }}</h3>
-        <p>{{ proyecto.descripcion }}</p>
+        <p>{{ 'PROJECTS.POUSADA_DESC' | translate }}</p>
     </div>
 </div>

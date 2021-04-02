@@ -2,50 +2,63 @@
   <div class="caja navegacion">
     <div class="contenedor-flex">
       <div class="subcontenedor-flex">Logo</div>
-      <div class="subcontenedor-flex">
-        <button class="boton boton-navegacion">Inicio</button>
-        <button class="boton boton-navegacion">Proyectos</button>
+      <div class="subcontenedor-flex lenguaje">
+        <select class="seleccionar-idioma" #langselect (change)="translate.use(langselect.value)">
+          <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</option>
+        </select>
+        <!--
+        <button id="boton-inicio" class="boton boton-navegacion">Inicio</button>
+        <button id="boton-proyecto" class="boton boton-navegacion ">Proyectos</button>
         <div class="dropdown">
-          <button class="boton boton-navegacion"><i class="fas fa-globe"></i> Idioma</button>
-          <div class="dropdown-content">
-            <a href="#">Español</a>
+          <button id="boton-idioma" class="boton boton-navegacion" #langselect (change)="translate.use(langselect.value)"><i class="fas fa-globe"></i> Idioma</button>
+          <div class="dropdown-content" >
+            <a *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</a>
             <a href="#">Inglés</a>
           </div>
-        </div>
+        </div>-->
         
       </div>
     </div>
   </div>
   <div class="caja presentacion">
     <div class="contenedor-presentacion">
-      <div class="efecto-parallax"></div>
-      <img class="img-presentacion" src="../assets/img-presentacion.jpg">
-      <h1 class="titulo">Ramiro De La Cruz Navarro<br>Desarrollador Web</h1>
+      <!--<div class="efecto-parallax"></div>-->
+      <!--<img class="img-presentacion" src="../assets/fondo.png">-->
+      <h1 class="titulo">Ramiro De La Cruz Navarro
+        <p  id="desarrollo-web" i18n="Presentation title | Web development.@@webDevelopment">{{ 'HOME.OFFICE' | translate }}</p>
+      </h1>
+      
     </div>
   </div>
   <div class="caja menu">
     <div class="contenedor-menu">
       <ul class="lista-menu">
-        <li class="elemento-menu"><a href="#quien-soy" routerLinkActive="activo" >¿Quién soy?</a></li>
-        <li class="elemento-menu"><a href="#habilidades-tecnicas" routerLinkActive="activo">Habilidades tecnicas</a></li>
-        <li class="elemento-menu"><a href="#proyectos" routerLinkActive="activo">Proyectos</a></li>
-        <li class="elemento-menu"><a href="#contacto" routerLinkActive="activo">Contacto</a></li>
+        <li class="elemento-menu"><a href="#quien-soy" routerLinkActive="activo" >{{ 'ME.QUESTION' | translate }}</a></li>
+        <li class="elemento-menu"><a href="#habilidades-tecnicas" routerLinkActive="activo">{{ 'TECHNICAL_SKILLS.TECH' | translate }}</a></li>
+        <li class="elemento-menu"><a href="#proyectos" routerLinkActive="activo">{{ 'PROJECTS.TITLE' | translate }}</a></li>
+        <li class="elemento-menu"><a href="#contacto" routerLinkActive="activo">{{ 'HOME.CONTACT' | translate }}</a></li>
       </ul>
     </div>
   </div>
   <div class="caja contenido">
     <div class="contenedor-principal">
       <div id="quien-soy" class="quien-soy">
-        <h1>¿Quién soy?</h1>
+        <h1>{{ 'ME.QUESTION' | translate }}</h1>
         <img
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpluspng.com%2Fimg-png%2Fuser-png-icon-young-user-icon-2400.png&f=1&nofb=1"
           class="img-foto-perfil">
-        <p>Soy desarrollador web con 7 meses de experiencia, actualmente me encuentro en octavo semestre de la carrera
-          de
-          Ing. En sistemas computacionales en la universidad del valle de México Campus Villahermosa.</p><br>
-        <p>Tambien trabajo en Axolotl Systems Company, una empresa en crecimiento, fundada por un compañero de la
-          carrera.
-          Mi trabajo consiste en el desarrollo de front-end con Angular y realizar la conexión con el back-end.</p>
+          
+        <p>{{ 'ME.DESCRIPTION' | translate }}</p><br>
+        <p>{{ 'ME.MY_WORK' | translate }}</p>
+        <!--
+          <p>{{ 'HOME.TITLE' | translate }}</p>
+          <p>{{ 'HOME.TEXT' | translate }}</p>
+          <label for="">{{ 'HOME.SELECT' | translate }}
+            <select #langselect (change)="translate.use(langselect.value)">
+              <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</option>
+            </select>
+          </label>-->
+
       </div>
       <div id="habilidades-tecnicas" class="habilidades">
         <app-habilidades-tecnicas></app-habilidades-tecnicas>
@@ -66,7 +79,7 @@
 -->
   <div id="contacto" class="caja pie-pagina">
     <div class="contenedor-pie-pagina">
-      <h3>Más información</h3>
+      <h3>{{ 'HOME.MORE_INFO' | translate }}</h3>
       <div class="contenido-enlaces">
         <a  class="enlace-linkedin" href="https://www.linkedin.com/in/ramiro-de-la-cruz-navarro/" target="_blank">
           <i

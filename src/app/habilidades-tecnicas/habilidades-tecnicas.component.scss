@@ -20,3 +20,10 @@
 b {
     color: var(--tial-fuerte);
 }
+
+@media only screen and (max-width: 768px){
+
+  .contenedor{
+    grid-template-columns: 100%;
+  }
+}

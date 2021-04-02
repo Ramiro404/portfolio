@@ -1,9 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
     --tial-claro: rgb(53,190,158,0.3);
-    --tial-fuerte: rgb(0,174,133);
+    --tial-fuerte: rgb(0, 173, 133);
+
+    --gradiente-1: hsla(175, 80%, 33%, 0.65);
+    --gradiente-2: hsla(143, 85%, 58%, 0.65);
     --blanco: white;
     --img-tamaño: 8rem;
+    /*
+    #11998e > #38ef7d
+    #00b09b > #96c93d
+    #1d976c > #93f9b9 mojito
+    */
 }
 
 *{
