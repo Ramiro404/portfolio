@@ -1,42 +1,35 @@
 <div class="contenedor">
   <div class="caja navegacion">
     <div class="contenedor-flex">
-      <div class="subcontenedor-flex">Logo</div>
+      <div class="subcontenedor-flex">
+        <img class="logo" src="../assets/logo.png" alt="Logo, Robot, Future">
+      </div>
       <div class="subcontenedor-flex lenguaje">
         <select class="seleccionar-idioma" #langselect (change)="translate.use(langselect.value)">
           <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</option>
         </select>
-        <!--
-        <button id="boton-inicio" class="boton boton-navegacion">Inicio</button>
-        <button id="boton-proyecto" class="boton boton-navegacion ">Proyectos</button>
-        <div class="dropdown">
-          <button id="boton-idioma" class="boton boton-navegacion" #langselect (change)="translate.use(langselect.value)"><i class="fas fa-globe"></i> Idioma</button>
-          <div class="dropdown-content" >
-            <a *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</a>
-            <a href="#">Inglés</a>
-          </div>
-        </div>-->
-        
       </div>
     </div>
   </div>
   <div class="caja presentacion">
     <div class="contenedor-presentacion">
-      <!--<div class="efecto-parallax"></div>-->
-      <!--<img class="img-presentacion" src="../assets/fondo.png">-->
       <h1 class="titulo">Ramiro De La Cruz Navarro
-        <p  id="desarrollo-web" i18n="Presentation title | Web development.@@webDevelopment">{{ 'HOME.OFFICE' | translate }}</p>
+        <p id="desarrollo-web" i18n="Presentation title | Web development.@@webDevelopment">{{ 'HOME.OFFICE' | translate
+          }}</p>
       </h1>
-      
     </div>
   </div>
   <div class="caja menu">
     <div class="contenedor-menu">
       <ul class="lista-menu">
-        <li class="elemento-menu"><a href="#quien-soy" routerLinkActive="activo" >{{ 'ME.QUESTION' | translate }}</a></li>
-        <li class="elemento-menu"><a href="#habilidades-tecnicas" routerLinkActive="activo">{{ 'TECHNICAL_SKILLS.TECH' | translate }}</a></li>
-        <li class="elemento-menu"><a href="#proyectos" routerLinkActive="activo">{{ 'PROJECTS.TITLE' | translate }}</a></li>
-        <li class="elemento-menu"><a href="#contacto" routerLinkActive="activo">{{ 'HOME.CONTACT' | translate }}</a></li>
+        <li class="elemento-menu"><a href="#quien-soy" routerLinkActive="activo">{{ 'ME.QUESTION' | translate }}</a>
+        </li>
+        <li class="elemento-menu"><a href="#habilidades-tecnicas" routerLinkActive="activo">{{ 'TECHNICAL_SKILLS.TECH' |
+            translate }}</a></li>
+        <li class="elemento-menu"><a href="#proyectos" routerLinkActive="activo">{{ 'PROJECTS.TITLE' | translate }}</a>
+        </li>
+        <li class="elemento-menu"><a href="#contacto" routerLinkActive="activo">{{ 'HOME.CONTACT' | translate }}</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -45,20 +38,11 @@
       <div id="quien-soy" class="quien-soy">
         <h1>{{ 'ME.QUESTION' | translate }}</h1>
         <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpluspng.com%2Fimg-png%2Fuser-png-icon-young-user-icon-2400.png&f=1&nofb=1"
-          class="img-foto-perfil">
-          
-        <p>{{ 'ME.DESCRIPTION' | translate }}</p><br>
+          src="../assets/perfil.png"
+          class="img-foto-perfil"
+          alt="Ramiro De La Cruz Navarro">
+        <p>{{ 'ME.DESCRIPTION' | translate }}</p>
         <p>{{ 'ME.MY_WORK' | translate }}</p>
-        <!--
-          <p>{{ 'HOME.TITLE' | translate }}</p>
-          <p>{{ 'HOME.TEXT' | translate }}</p>
-          <label for="">{{ 'HOME.SELECT' | translate }}
-            <select #langselect (change)="translate.use(langselect.value)">
-              <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</option>
-            </select>
-          </label>-->
-
       </div>
       <div id="habilidades-tecnicas" class="habilidades">
         <app-habilidades-tecnicas></app-habilidades-tecnicas>
@@ -70,34 +54,37 @@
     <div class="contenedor-proyectos">
       <app-proyectos></app-proyectos>
     </div>
+  </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pousada Sandi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="../assets/project-1.png" class="img-fluid" alt="Hotel Pousada Sandi">
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- Más adelante será agragado
-  <div class="caja formulario">
-    <app-formulario-contacto></app-formulario-contacto>
-  </div>
--->
+
   <div id="contacto" class="caja pie-pagina">
     <div class="contenedor-pie-pagina">
       <h3>{{ 'HOME.MORE_INFO' | translate }}</h3>
       <div class="contenido-enlaces">
-        <a  class="enlace-linkedin" href="https://www.linkedin.com/in/ramiro-de-la-cruz-navarro/" target="_blank">
-          <i
-          class="fab fa-linkedin"></i>
+        <a class="enlace-linkedin" href="https://www.linkedin.com/in/ramiro-de-la-cruz-navarro/" target="_blank">
+          <i class="fab fa-linkedin"></i>
         </a>
         <a class="enlace-github" href="https://github.com/Ramiro404" target="_blank">
           <i class="fab fa-github"></i>
         </a>
       </div>
-      <!--
-      <a class="boton linkedin" href="https://www.linkedin.com/in/ramiro-de-la-cruz-navarro/" target="_blank"> <i
-          class="fab fa-linkedin"></i>
-        Ramiro De La Cruz Navarro</a>-->
       <br>
-      <!--Gracias por visitar mi portafolio-->
       &copy; Copyright 2021
     </div>
-
-
   </div>
 </div>

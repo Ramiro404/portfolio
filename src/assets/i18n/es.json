@@ -10,7 +10,7 @@
     "ME":{
         "QUESTION": "¿Quién soy?",
         "DESCRIPTION": "Soy desarrollador web con 7 meses de experiencia, actualmente me encuentro en octavo semestre de la carrera de Ing. En sistemas computacionales en la universidad del valle de México Campus Villahermosa.",
-        "MY_WORK": "Tambien trabajo en Axolotl Systems Company, una empresa en crecimiento, fundada por un compañero de la carrera. Mi trabajo consiste en el desarrollo de front-end con Angular y realizar la conexión con el back-end."
+        "MY_WORK": "Tambien, trabajé en Axolotl Systems Company, una empresa en crecimiento, fundada por un compañero de la carrera. Mi trabajo consistió en el desarrollo de front-end con Angular y realizar la conexión con el back-end."
     },
     "TECHNICAL_SKILLS":{
         "TECH": "Habilidades técnicas",
@@ -24,6 +24,7 @@
     },
     "PROJECTS":{
         "TITLE": "Proyectos",
+        "SEEMORE": "Ver más",
         "POUSADA_DESC": "Página web de un hotel que ofrece sus servicios."
     }
 }

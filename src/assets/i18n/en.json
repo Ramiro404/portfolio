@@ -10,7 +10,7 @@
     "ME":{
         "QUESTION": "Who am I?",
         "DESCRIPTION": "I am a web developer with 7 months of experience, currently, I am in the eighth semester of bachelor in Computer Systems Engineering at the Universidad del Valle de México.",
-        "MY_WORK": "I also work at Axolotl Systems Company, a growing company, founded by a career partner. My job is to develop front-end with Angular and make back-end connection."
+        "MY_WORK": "I also worked at Axolotl Systems Company, a growing company, founded by a career partner. My job was to develop front-end with Angular and make the back-end connection."
     },
     "TECHNICAL_SKILLS":{
         "TECH": "Technical skills",
@@ -24,6 +24,7 @@
     },
     "PROJECTS":{
         "TITLE": "Projects",
-        "POUSADA_DESC": "Website of a hotel that offers its services."
+        "SEEMORE": "See more",
+        "POUSADA_DESC": "Website hotel offering its services."
     }
 }

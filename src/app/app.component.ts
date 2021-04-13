@@ -8,10 +8,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'portfolio';
-  constructor(public translate: TranslateService){
-    translate.addLangs(['es','en']);
+  constructor(
+    public translate: TranslateService) {
+    translate.addLangs(['es', 'en']);
     translate.setDefaultLang('es');
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|es/) ?  browserLang : 'en');
+    translate.use(browserLang.match(/en|es/) ? browserLang : 'en');
   }
 }

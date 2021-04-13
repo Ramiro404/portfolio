@@ -6,13 +6,15 @@
     --gradiente-1: hsla(175, 80%, 33%, 0.65);
     --gradiente-2: hsla(143, 85%, 58%, 0.65);
     --blanco: white;
-    --img-tamaño: 8rem;
+    --img-tamaño: 15rem;
     /*
     #11998e > #38ef7d
     #00b09b > #96c93d
     #1d976c > #93f9b9 mojito
     */
 }
+
+$modal-fade-transform: scale(0.9);
 
 *{
     margin: 0;
@@ -24,3 +26,6 @@
 html{
     scroll-behavior: smooth;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

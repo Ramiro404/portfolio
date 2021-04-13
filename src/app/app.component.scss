@@ -18,7 +18,7 @@
 
 .contenedor-menu{
     position: sticky;
-    top: 1rem;
+    top: 0.5rem;
 }
 
 .contenedor-flex{
@@ -46,22 +46,14 @@
     text-align: center;
 }
 
-.img-presentacion {
-    width: 100vh;
-    height: 30rem;
-    display: grid;
-	place-items: center;
-	place-content: center;
-}
-
 .contenedor-presentacion{
     width: 100%;
-    height: 30rem;
-    background-image: url('/assets/fondo.png');
+    height: 40rem;
     display: grid;
 	place-items: center;
 	place-content: center;
-    background: linear-gradient(135deg, var(--gradiente-1), var(--gradiente-2)), url('/assets/fondo.png') no-repeat center center / cover;
+    background: linear-gradient(135deg, var(--gradiente-1), var(--gradiente-2)), url('../assets/fondo.jpg') no-repeat center center / cover;
+    background-attachment: fixed; 
 }
 
 .contenedor-presentacion > .titulo {
@@ -104,10 +96,10 @@ li.elemento-menu a:hover:not(.activo){
 .contenedor-principal, .contenedor-proyectos{
     padding: 1rem;
 }
-
+/*
 .contenedor-menu, .contenedor-principal, .contenedor-proyectos{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+}*/
 
 .img-foto-perfil{
     border-radius: 50%;
@@ -190,6 +182,7 @@ a.linkedin:hover, a.linkedin:active{
   .lenguaje{
     overflow: hidden;
     position:relative;
+    right: 0.5rem;
   }
 
   select {
@@ -206,6 +199,14 @@ a.linkedin:hover, a.linkedin:active{
 	pointer-events: none;
  }
 
+ol, ul {padding-left: 0;}
+
+ .logo{
+     width: 3.5rem;
+     height: auto;
+     
+ }
+
   @media only screen and (max-width: 768px){
     .navegacion, .presentacion, .formulario, .pie-pagina, .contenido, .proyectos{
         grid-column-start: 1;
@@ -215,4 +216,12 @@ a.linkedin:hover, a.linkedin:active{
     .menu{ display: none; }
 
     .img-presentacion { height: 20rem; }
+
+    
+  }  
+
+  @media only screen and (max-width: 460px){
+      .contenedor-presentacion{
+        background: linear-gradient(135deg, var(--gradiente-1), var(--gradiente-2)), url('../assets/fondo-mobile.jpg') no-repeat center center / cover;
+      }
   }
