@@ -1,0 +1,30 @@
+{
+    "HOME":{
+        "TITLE": "HELLO TO MY WEBSITE",
+        "TEXT": "This demo has been created using ngx translate",
+        "SELECT": "Select language",
+        "OFFICE": "Web Developer",
+        "CONTACT": "Contact",
+        "MORE_INFO": "More information"
+    },
+    "ME":{
+        "QUESTION": "Who am I?",
+        "DESCRIPTION": "I am a web developer with 7 months of experience, currently, I am in the eighth semester of bachelor in Computer Systems Engineering at the Universidad del Valle de México.",
+        "MY_WORK": "I also worked at Axolotl Systems Company, a growing company, founded by a career partner. My job was to develop front-end with Angular and make the back-end connection."
+    },
+    "TECHNICAL_SKILLS":{
+        "TECH": "Technical skills",
+        "JAVA_TECHNOLOGIES": "Java technologies",
+        "WEB_TECNOLOGIES": "Web technologies",
+        "DATABASE": "Database",
+        "ADDITIONAL_KNOWLEDGE": "Additional knowledge",
+        "MVC": "MVC Pattern",
+        "OOP": "Object-oriented programming",
+        "GIT": "Version control with Git & Github"
+    },
+    "PROJECTS":{
+        "TITLE": "Projects",
+        "SEEMORE": "See more",
+        "POUSADA_DESC": "Website hotel offering its services."
+    }
+}
